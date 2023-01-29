@@ -1,7 +1,7 @@
-package erekir-scaled;
+package es;
 
 import mindustry.mod.*;
-import erekir-scaled.content.*;
+import es.content.*;
 
 public class ESMod extends Mod{
 

@@ -9,9 +9,9 @@ import static mindustry.type.ItemStack.*;
 
 public class ESWalls{
     public static Block
-
-
-
+    berylliumWallHuge, berylliumWallGigantic, tungstenWallHuge, tungstenWallGigantic, blastGate, blastDoorLarge,
+    blastDoorHuge, reinforcedSurgeWallHuge, reinforcedSurgeWallGigantic, carbideWallHuge, carbideWallGigantic,
+    shieldedWallSmall, shieldedWallLarge, shieldedWallHuge;
     public static void load(){
         berylliumWallHuge = new Wall("beryllium-wall-huge"){{
             requirements(Category.defense, ItemStack.mult(berylliumWall.requirements, 9));
