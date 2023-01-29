@@ -3,8 +3,8 @@ package xenacia.content;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
-import mindustry.content.blocks.*;
-import mindustry.content.items.*;
+import mindustry.content.Blocks;
+import mindustry.content.Items;
 
 import static mindustry.type.ItemStack.*;
 
@@ -16,6 +16,7 @@ public class ESWalls{
     public static void load(){
 
         int wallHealthMultiplier = 4;
+        
         berylliumWallHuge = new Wall("beryllium-wall-huge"){{
             requirements(Category.defense, ItemStack.mult(berylliumWall.requirements, 9));
             health = 130 * wallHealthMultiplier * 9;
