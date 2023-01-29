@@ -4,6 +4,7 @@ import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
 import mindustry.content.blocks.*;
+import mindustry.content.items.*;
 
 import static mindustry.type.ItemStack.*;
 
