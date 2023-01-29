@@ -16,30 +16,30 @@ public class ESWalls{
     public static void load(){
 
         int wallHealthMultiplier = 4;
-        
+
         berylliumWallHuge = new Wall("beryllium-wall-huge"){{
-            requirements(Category.defense, ItemStack.mult(berylliumWall.requirements, 9));
+            requirements(Category.defense, ItemStack.mult(Items.beryllium, 54));
             health = 130 * wallHealthMultiplier * 9;
             armor = 2f;
             buildCostMultiplier = 3f;
             size = 3;
         }};
         berylliumWallGigantic = new Wall("beryllium-wall-gigantic"){{
-            requirements(Category.defense, ItemStack.mult(berylliumWall.requirements, 16));
+            requirements(Category.defense, ItemStack.mult(Items.beryllium, 96));
             health = 130 * wallHealthMultiplier * 16;
             armor = 2f;
             buildCostMultiplier = 2f;
             size = 4;
         }};
         tungstenWallHuge = new Wall("tungsten-wall-huge"){{
-            requirements(Category.defense, ItemStack.mult(tungstenWall.requirements, 9));
+            requirements(Category.defense, ItemStack.mult(Items.tungsten, 54));
             health = 180 * wallHealthMultiplier * 9;
             armor = 14f;
             buildCostMultiplier = 3f;
             size = 3;
         }};
         tungstenWallGigantic = new Wall("tungsten-wall-gigantic"){{
-            requirements(Category.defense, ItemStack.mult(tungstenWall.requirements, 16));
+            requirements(Category.defense, ItemStack.mult(Items.tungsten, 96));
             health = 180 * wallHealthMultiplier * 16;
             armor = 14f;
             buildCostMultiplier = 2f;
@@ -51,7 +51,7 @@ public class ESWalls{
             armor = 14f;
         }};
         blastDoorLarge = new AutoDoor("blast-door-large"){{
-            requirements(Category.defense, with(Items.tungsten, 24, Items.silicon, 24));
+            requirements(Category.defense, with(Items.tungsten, 54, Items.silicon, 54));
             health = 175 * wallHealthMultiplier * 4;
             armor = 14f;
             size = 3;
@@ -63,7 +63,7 @@ public class ESWalls{
             size = 4;
         }};
         reinforcedSurgeWallHuge = new Wall("reinforced-surge-wall-huge"){{
-            requirements(Category.defense, ItemStack.mult(reinforcedSurgeWall.requirements, 9));
+            requirements(Category.defense, ItemStack.mult(Items.surgeAlloy, 54, Items.tungsten, 18));
             health = 250 * wallHealthMultiplier * 16;
             lightningChance = 0.05f;
             lightningDamage = 30f;
@@ -72,7 +72,7 @@ public class ESWalls{
             researchCost = with(Items.surgeAlloy, 120, Items.tungsten, 600);
         }};
         reinforcedSurgeWallGigantic = new Wall("reinforced-surge-wall-gigantic"){{
-            requirements(Category.defense, ItemStack.mult(reinforcedSurgeWall.requirements, 16));
+            requirements(Category.defense, ItemStack.mult(Items.surgeAlloy, 96, Items.tungsten, 32));
             health = 250 * wallHealthMultiplier * 16;
             lightningChance = 0.05f;
             lightningDamage = 30f;
@@ -81,13 +81,13 @@ public class ESWalls{
             researchCost = with(Items.surgeAlloy, 240, Items.tungsten, 1200);
         }};
         carbideWallHuge = new Wall("carbide-wall-huge"){{
-            requirements(Category.defense, ItemStack.mult(carbideWall.requirements, 9));
+            requirements(Category.defense, ItemStack.mult(Items.thorium, 54, Items.carbide, 54));
             health = 270 * wallHealthMultiplier * 9;
             armor = 16f;
             size = 3;
         }};
         carbideWallGigantic = new Wall("carbide-wall-gigantic"){{
-            requirements(Category.defense, ItemStack.mult(carbideWall.requirements, 16));
+            requirements(Category.defense, ItemStack.mult(Items.thorium, 96, Items.carbide, 96));
             health = 270 * wallHealthMultiplier * 16;
             armor = 16f;
             size = 4;
