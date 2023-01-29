@@ -105,6 +105,10 @@ public class ESWalls{
 
             health = 260 * wallHealthMultiplier;
             armor = 15f;
+
+            shieldHealth = 600f;
+            breakCooldown = 60f * 8f;
+            regenSpeed = 2f;
         }};
         shieldedWallLarge = new ShieldWall("shielded-wall-large"){{
             requirements(Category.defense, ItemStack.with(Items.phaseFabric, 45, Items.surgeAlloy, 27, Items.beryllium, 27));
@@ -120,10 +124,14 @@ public class ESWalls{
             health = 260 * wallHealthMultiplier * 9;
             armor = 15f;
             size = 3;
+
+            shieldHealth = 2200f;
+            breakCooldown = 60f * 15f;
+            regenSpeed = 2f;
         }};
         shieldedWallHuge = new ShieldWall("shielded-wall-huge"){{
             requirements(Category.defense, ItemStack.with(Items.phaseFabric, 80, Items.surgeAlloy, 48, Items.beryllium, 48));
-            consumePower(5f / 60f);
+            consumePower(6f / 60f);
 
             outputsPower = false;
             hasPower = true;
@@ -135,6 +143,10 @@ public class ESWalls{
             health = 260 * wallHealthMultiplier * 16;
             armor = 15f;
             size = 4;
+
+            shieldHealth = 9000f;
+            breakCooldown = 60f * 15f;
+            regenSpeed = 2f;
         }};
     }
 }
