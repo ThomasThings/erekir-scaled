@@ -4,7 +4,7 @@ name: "erekir-scaled"
 
 author: "Thomas's Things"
 
-main: "erekir-scaled.ErekirScaledMod"
+main: "erekir-scaled.ESMod"
 
 description: "A Mindustry mod for adding both larger and smaller content to Erekir."
 
