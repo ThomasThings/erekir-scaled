@@ -1,4 +1,4 @@
-package xenacia.content;
+package es.content;
 
 import mindustry.type.*;
 import mindustry.world.*;
