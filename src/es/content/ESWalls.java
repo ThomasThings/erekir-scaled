@@ -105,7 +105,6 @@ public class ESWalls{
 
             health = 260 * wallHealthMultiplier;
             armor = 15f;
-            size = 2;
         }};
         shieldedWallLarge = new ShieldWall("shielded-wall-large"){{
             requirements(Category.defense, ItemStack.with(Items.phaseFabric, 45, Items.surgeAlloy, 27, Items.beryllium, 27));
