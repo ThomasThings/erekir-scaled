@@ -14,6 +14,8 @@ public class ESWalls{
     blastDoorHuge, reinforcedSurgeWallHuge, reinforcedSurgeWallGigantic, carbideWallHuge, carbideWallGigantic,
     shieldedWallSmall, shieldedWallLarge, shieldedWallHuge;
     public static void load(){
+
+        int wallHealthMultiplier = 4;
         berylliumWallHuge = new Wall("beryllium-wall-huge"){{
             requirements(Category.defense, ItemStack.mult(berylliumWall.requirements, 9));
             health = 130 * wallHealthMultiplier * 9;
