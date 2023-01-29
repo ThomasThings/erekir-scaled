@@ -3,7 +3,7 @@ package xenacia.content;
 import mindustry.type.*;
 import mindustry.world.*;
 import mindustry.world.blocks.defense.*;
-import mindustry.content.*;
+import mindustry.content.blocks.*;
 
 import static mindustry.type.ItemStack.*;
 
