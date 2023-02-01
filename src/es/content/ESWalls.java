@@ -46,6 +46,7 @@ public class ESWalls{
             buildCostMultiplier = 8f;
             insulated = true;
             schematicPriority = 10;
+            size = 2;
         }};
         reinforcedGraphiteWallLarge = new Wall("reinforced-graphite-wall-large"){{
             requirements(Category.defense, with(Items.graphite, 20, Items.beryllium, 8));
@@ -54,6 +55,7 @@ public class ESWalls{
             buildCostMultiplier = 5f;
             insulated = true;
             schematicPriority = 10;
+            size = 3;
         }};
         reinforcedGraphiteWallHuge = new Wall("reinforced-graphite-wall-huge"){{
             requirements(Category.defense, with(Items.graphite, 45, Items.beryllium, 18));
@@ -62,6 +64,7 @@ public class ESWalls{
             buildCostMultiplier = 3f;
             insulated = true;
             schematicPriority = 10;
+            size = 4;
         }};
         reinforcedGraphiteWallGigantic = new Wall("reinforced-graphite-wall-gigantic"){{
             requirements(Category.defense, with(Items.graphite, 80, Items.beryllium, 32));
@@ -90,6 +93,7 @@ public class ESWalls{
             schematicPriority = 10;
             lightningChance = 0.05f;
             lightningDamage = 5f;
+            size = 2;
         }};
         reinforcedSiliconWallHuge = new Wall("reinforced-silicon-wall-huge"){{
             requirements(Category.defense, with(Items.silicon, 45, Items.graphite, 18));
@@ -100,6 +104,7 @@ public class ESWalls{
             schematicPriority = 10;
             lightningChance = 0.025f;
             lightningDamage = 10f;
+            size = 3;
         }};
         reinforcedSiliconWallGigantic = new Wall("reinforced-silicon-wall-gigantic"){{
             requirements(Category.defense, with(Items.silicon, 80, Items.graphite, 32));
@@ -110,6 +115,7 @@ public class ESWalls{
             schematicPriority = 10;
             lightningChance = 0.025f;
             lightningDamage = 10f;
+            size = 4;
         }};
         tungstenWallHuge = new Wall("tungsten-wall-huge"){{
             requirements(Category.defense, ItemStack.with(Items.tungsten, 54));
