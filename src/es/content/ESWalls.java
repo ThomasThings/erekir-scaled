@@ -72,6 +72,7 @@ public class ESWalls{
             buildCostMultiplier = 2f;
             insulated = true;
             schematicPriority = 10;
+            size = 4;
         }};
         reinforcedSiliconWall = new Wall("reinforced-silicon-wall"){{
             requirements(Category.defense, with(Items.silicon, 5, Items.graphite, 2));
