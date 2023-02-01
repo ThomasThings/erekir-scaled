@@ -46,7 +46,6 @@ public class ESWalls{
             buildCostMultiplier = 8f;
             insulated = true;
             schematicPriority = 10;
-            size = 2;
         }};
         reinforcedGraphiteWallLarge = new Wall("reinforced-graphite-wall-large"){{
             requirements(Category.defense, with(Items.graphite, 20, Items.beryllium, 8));
@@ -55,7 +54,7 @@ public class ESWalls{
             buildCostMultiplier = 5f;
             insulated = true;
             schematicPriority = 10;
-            size = 3;
+            size = 2;
         }};
         reinforcedGraphiteWallHuge = new Wall("reinforced-graphite-wall-huge"){{
             requirements(Category.defense, with(Items.graphite, 45, Items.beryllium, 18));
@@ -64,7 +63,7 @@ public class ESWalls{
             buildCostMultiplier = 3f;
             insulated = true;
             schematicPriority = 10;
-            size = 4;
+            size = 3;
         }};
         reinforcedGraphiteWallGigantic = new Wall("reinforced-graphite-wall-gigantic"){{
             requirements(Category.defense, with(Items.graphite, 80, Items.beryllium, 32));
