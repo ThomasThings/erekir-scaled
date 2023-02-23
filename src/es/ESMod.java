@@ -9,6 +9,7 @@ public class ESMod extends Mod{
 
     public void loadContent(){
         ESWalls.load();
+        ESPower.load();
     }
 
 }
