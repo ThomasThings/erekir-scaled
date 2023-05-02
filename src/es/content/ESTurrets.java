@@ -55,7 +55,7 @@ public class ESTurrets{
                     }}
             );
 
-            shootSound = Sounds.shootAlt;
+            shootSound = ESSounds.shootAltLight;
             recoil = 1f;
 
             reload = 40f;
@@ -235,7 +235,7 @@ public class ESTurrets{
                     }}
             );
 
-            shootSound = Sounds.shootAlt;
+            shootSound = ESSounds.shootAltHeavy;
             recoil = 2f;
 
             reload = 90f;
