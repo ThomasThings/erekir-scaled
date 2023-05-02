@@ -26,7 +26,7 @@ public class ESTurrets{
 
         cleft = new ItemTurret("cleft"){{
             requirements(Category.turret, with(Items.beryllium, 50, Items.graphite, 25));
-            drawer = new DrawTurret("-reinforced");
+            drawer = new DrawTurret("reinforced-");
             outlineColor = Pal.darkOutline;
             envEnabled |= Env.space;
             size = 1;
@@ -72,7 +72,7 @@ public class ESTurrets{
         }};
         rip = new ItemTurret("rip"){{
             requirements(Category.turret, with(Items.beryllium, 100, Items.silicon, 50, Items.graphite, 100));
-            drawer = new DrawTurret("-reinforced");
+            drawer = new DrawTurret("reinforced-");
             outlineColor = Pal.darkOutline;
             envEnabled |= Env.space;
             size = 2;
@@ -118,7 +118,7 @@ public class ESTurrets{
         }};
         rupture = new ItemTurret("rupture"){{
             requirements(Category.turret, with(Items.beryllium, 550, Items.silicon, 350, Items.tungsten, 200));
-            drawer = new DrawTurret("-reinforced");
+            drawer = new DrawTurret("reinforced-");
             outlineColor = Pal.darkOutline;
             envEnabled |= Env.space;
             size = 4;
@@ -183,7 +183,7 @@ public class ESTurrets{
         }};
         rift = new ItemTurret("rift"){{
             requirements(Category.turret, with(Items.beryllium, 2500, Items.silicon, 500, Items.graphite, 400, Items.carbide, 500));
-            drawer = new DrawTurret("-reinforced");
+            drawer = new DrawTurret("reinforced-");
             outlineColor = Pal.darkOutline;
             envEnabled |= Env.space;
             size = 5;
