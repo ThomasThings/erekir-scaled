@@ -31,14 +31,15 @@ public class ESTurrets{
             envEnabled |= Env.space;
             size = 1;
             scaledHealth = 180;
-            rotateSpeed = 2f;
+            rotateSpeed = 4f;
 
             Effect sfe = new MultiEffect(Fx.shootSmallColor, Fx.colorSpark);
             ammo(
-                    Items.beryllium, new BasicBulletType(7.5f, 20){{
-                        width = 4f;
+                    Items.beryllium, new BasicBulletType(5.5f, 20){{
+                        width = 6f;
                         hitSize = 4f;
-                        height = 6f;
+                        height = 8f;
+                        lifetime = 40;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootSmallSmoke;
                         ammoMultiplier = 1;
@@ -47,7 +48,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.berylShot;
                         frontColor = Color.white;
-                        trailWidth = 1f;
+                        trailWidth = 0.8f;
                         trailLength = 6;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         buildingDamageMultiplier = 0.5f;
@@ -77,7 +78,7 @@ public class ESTurrets{
             envEnabled |= Env.space;
             size = 2;
             scaledHealth = 180;
-            rotateSpeed = 2f;
+            rotateSpeed = 3f;
 
             Effect sfe = new MultiEffect(Fx.shootBigColor, Fx.colorSparkBig);
             ammo(
@@ -131,6 +132,7 @@ public class ESTurrets{
                         width = 14f;
                         hitSize = 8f;
                         height = 24f;
+                        lifetime = 90;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootBigSmoke;
                         ammoMultiplier = 2;
@@ -139,7 +141,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.berylShot;
                         frontColor = Color.white;
-                        trailWidth = 2.1f;
+                        trailWidth = 3f;
                         trailLength = 10;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         buildingDamageMultiplier = 0.3f;
@@ -148,6 +150,7 @@ public class ESTurrets{
                         width = 13f;
                         height = 19f;
                         hitSize = 7f;
+                        lifetime = 90;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootBigSmoke;
                         ammoMultiplier = 1;
@@ -157,8 +160,8 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.tungstenShot;
                         frontColor = Color.white;
-                        trailWidth = 2.2f;
-                        trailLength = 11;
+                        trailWidth = 3.2f;
+                        trailLength = 16;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         rangeChange = 40f;
                         buildingDamageMultiplier = 0.3f;
@@ -168,7 +171,7 @@ public class ESTurrets{
             shootSound = Sounds.shootAlt;
             recoil = 2f;
 
-            reload = 40f;
+            reload = 50f;
             shootY = 0;
             targetUnderBlocks = false;
             shake = 0;
@@ -196,6 +199,7 @@ public class ESTurrets{
                         width = 16f;
                         hitSize = 9f;
                         height = 30f;
+                        lifetime = 120;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootBigSmoke;
                         ammoMultiplier = 1;
@@ -204,7 +208,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.berylShot;
                         frontColor = Color.white;
-                        trailWidth = 2.1f;
+                        trailWidth = 4.8f;
                         trailLength = 10;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         buildingDamageMultiplier = 0.3f;
@@ -213,6 +217,7 @@ public class ESTurrets{
                         width = 18f;
                         hitSize = 9f;
                         height = 32f;
+                        lifetime = 140;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootBigSmoke;
                         ammoMultiplier = 1;
@@ -222,7 +227,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.tungstenShot;
                         frontColor = Color.white;
-                        trailWidth = 2.2f;
+                        trailWidth = 5f;
                         trailLength = 11;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         rangeChange = 40f;
@@ -233,7 +238,7 @@ public class ESTurrets{
             shootSound = Sounds.shootAlt;
             recoil = 2f;
 
-            reload = 40f;
+            reload = 90f;
             shootY = 0;
             targetUnderBlocks = false;
             shake = 0;
