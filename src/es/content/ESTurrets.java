@@ -160,7 +160,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.tungstenShot;
                         frontColor = Color.white;
-                        trailWidth = 3.2f;
+                        trailWidth = 3.1f;
                         trailLength = 16;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         rangeChange = 40f;
@@ -208,7 +208,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.berylShot;
                         frontColor = Color.white;
-                        trailWidth = 4.8f;
+                        trailWidth = 3.5f;
                         trailLength = 10;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         buildingDamageMultiplier = 0.3f;
@@ -227,7 +227,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.tungstenShot;
                         frontColor = Color.white;
-                        trailWidth = 5f;
+                        trailWidth = 3.7f;
                         trailLength = 11;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         rangeChange = 40f;
