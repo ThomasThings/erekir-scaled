@@ -36,7 +36,7 @@ public class ESTurrets{
             Effect sfe = new MultiEffect(Fx.shootSmallColor, Fx.colorSpark);
             ammo(
                     Items.beryllium, new BasicBulletType(5.5f, 20){{
-                        width = 6f;
+                        width = 7f;
                         hitSize = 4f;
                         height = 8f;
                         lifetime = 40;
@@ -232,6 +232,26 @@ public class ESTurrets{
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         rangeChange = 40f;
                         buildingDamageMultiplier = 0.3f;
+                    }},
+                    Items.carbide, new BasicBulletType(7f, 420){{
+                        width = 23f;
+                        hitSize = 9f;
+                        height = 40f;
+                        lifetime = 160;
+                        shootEffect = sfe;
+                        smokeEffect = Fx.shootBigSmoke;
+                        ammoMultiplier = 1;
+                        reloadMultiplier = 1f;
+                        pierceCap = 8;
+                        pierce = true;
+                        pierceBuilding = true;
+                        hitColor = backColor = trailColor = Pal.tungstenShot;
+                        frontColor = Color.white;
+                        trailWidth = 4f;
+                        trailLength = 10;
+                        hitEffect = despawnEffect = Fx.hitBulletColor;
+                        rangeChange = 40f;
+                        buildingDamageMultiplier = 0.5f;
                     }}
             );
 
