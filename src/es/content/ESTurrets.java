@@ -184,7 +184,7 @@ public class ESTurrets{
             coolantMultiplier = 6f;
             limitRange();
         }};
-        rift = new ItemTurret("rift"){{
+        rift = new ItemTurret("rift"){ {
             requirements(Category.turret, with(Items.beryllium, 2500, Items.silicon, 500, Items.graphite, 400, Items.carbide, 500));
             drawer = new DrawTurret("reinforced-");
             outlineColor = Pal.darkOutline;
@@ -208,7 +208,7 @@ public class ESTurrets{
                         pierceBuilding = true;
                         hitColor = backColor = trailColor = Pal.berylShot;
                         frontColor = Color.white;
-                        trailWidth = 3.5f;
+                        trailWidth = 3.4f;
                         trailLength = 10;
                         hitEffect = despawnEffect = Fx.hitBulletColor;
                         buildingDamageMultiplier = 0.3f;
@@ -234,9 +234,9 @@ public class ESTurrets{
                         buildingDamageMultiplier = 0.3f;
                     }},
                     Items.carbide, new BasicBulletType(7f, 420){{
-                        width = 23f;
+                        width = 21f;
                         hitSize = 9f;
-                        height = 40f;
+                        height = 38f;
                         lifetime = 160;
                         shootEffect = sfe;
                         smokeEffect = Fx.shootBigSmoke;
@@ -245,7 +245,7 @@ public class ESTurrets{
                         pierceCap = 8;
                         pierce = true;
                         pierceBuilding = true;
-                        hitColor = backColor = trailColor = Pal.tungstenShot;
+                        hitColor = backColor = trailColor = Color.valueOf("89769a");
                         frontColor = Color.white;
                         trailWidth = 4f;
                         trailLength = 10;
